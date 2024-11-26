@@ -17,3 +17,4 @@ langchain-huggingface
 streamlit
 wikipedia
 arxiv
+duckduckgo-search
