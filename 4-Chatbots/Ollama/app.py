@@ -44,10 +44,9 @@ if 'store' not in st.session_state:
 uploaded_files = st.file_uploader("Choose A Pdf file", type="pdf", accept_multiple_files=True)
 
 
-"""
-Got the line bellow cause of the error: ChromaDB - ValueError: Could not connect to tenant default_tenant. Are you sure it exists?
-Got the solution from: https://github.com/langchain-ai/langchain/issues/26884
-"""
+# Got the line bellow cause of the error: ChromaDB - ValueError: Could not connect to tenant default_tenant. Are you sure it exists?
+# Got the solution from: https://github.com/langchain-ai/langchain/issues/26884
+
 chromadb.api.client.SharedSystemClient.clear_system_cache()
 
 
